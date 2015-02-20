@@ -1,0 +1,16 @@
+﻿@model MVC_FileUpload1.Models.FileUploadModel
+
+@{
+    ViewBag.Title = "FileUpload";
+}
+
+<h2>FileUpload</h2>
+
+
+@using (@Html.BeginForm("FileUpload", "FileUpload", FormMethod.Post, new { @id = "form1", @enctype = "multipart/form-data" }))
+{
+
+    <input type="file" name="file" id="file" style="width: 20%;" />
+
+
+}
